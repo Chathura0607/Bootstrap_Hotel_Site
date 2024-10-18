@@ -10,6 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
@@ -48,6 +52,203 @@
       </div>
     </nav>
 
+    <div class="container mt-5 pt-5">
+      <h1
+        class="text-center mb-5 display-3 fw-bold"
+        style="font-family: 'Times New Roman'"
+      >
+        Our Hotel Gallery
+      </h1>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/assets/images/G1.jpg"
+              class="card-img-top"
+              alt="Gallery Image 1"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal1"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/assets/images/G2.jpg"
+              class="card-img-top"
+              alt="Gallery Image 2"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal2"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/assets/images/g3.jpg"
+              class="card-img-top"
+              alt="Gallery Image 3"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal3"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/assets/images/G4.jpg"
+              class="card-img-top"
+              alt="Gallery Image 4"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal4"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/assets/images/g5.jpg"
+              class="card-img-top"
+              alt="Gallery Image 5"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal5"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/assets/images/G6.jpg"
+              class="card-img-top"
+              alt="Gallery Image 6"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal6"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="imageModal1"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img
+              src="/assets/images/G1.jpg"
+              class="img-fluid"
+              alt="Gallery Image 1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="imageModal2"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img
+              src="/assets/images/G2.jpg"
+              class="img-fluid"
+              alt="Gallery Image 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="imageModal3"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img
+              src="/assets/images/g3.jpg"
+              class="img-fluid"
+              alt="Gallery Image 3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="imageModal4"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img
+              src="/assets/images/G4.jpg"
+              class="img-fluid"
+              alt="Gallery Image 4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="imageModal5"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img
+              src="/assets/images/g5.jpg"
+              class="img-fluid"
+              alt="Gallery Image 5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="imageModal6"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img
+              src="/assets/images/G6.jpg"
+              class="img-fluid"
+              alt="Gallery Image 6"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid bg-dark text-light mt-5">
       <div class="row bottom-bar py-4">
         <div class="col-md-6 social text-start">
@@ -66,27 +267,36 @@
         </div>
 
         <div class="col-md-6 text-end">
-          <h6 class="mb-4">Have a Question?</h6>
-          <div class="d-flex align-items-center justify-content-end mb-3">
+          <h6 class="mb-4">Reach Out to Us</h6>
+
+          <div class="d-flex align-items-center justify-content-end mb-4">
             <i
-              class="fa-solid fa-map-marker-alt me-2"
+              class="fa-solid fa-map-marker-alt"
               style="color: #fff; font-size: 1.25rem"
             ></i>
-            <h6 class="mb-0">No, 215, Galle Road, Colombo</h6>
+            <h6 class="mb-0 ms-2 text-start" style="width: 250px">
+              No, 215, Galle Road, Colombo
+            </h6>
           </div>
-          <div class="d-flex align-items-center justify-content-end mb-3">
+
+          <div class="d-flex align-items-center justify-content-end mb-4">
             <i
-              class="fa-solid fa-phone-alt me-2"
+              class="fa-solid fa-phone-alt"
               style="color: #fff; font-size: 1.25rem"
             ></i>
-            <h6 class="mb-0">091-2569753</h6>
+            <h6 class="mb-0 ms-2 text-start" style="width: 250px">
+              091-2569753
+            </h6>
           </div>
+
           <div class="d-flex align-items-center justify-content-end">
             <i
-              class="fa-solid fa-envelope me-2"
+              class="fa-solid fa-envelope"
               style="color: #fff; font-size: 1.25rem"
             ></i>
-            <h6 class="mb-0">azuredreams1@gmail.com</h6>
+            <h6 class="mb-0 ms-2 text-start" style="width: 250px">
+              azuredreamshotels@gmail.com
+            </h6>
           </div>
         </div>
       </div>
