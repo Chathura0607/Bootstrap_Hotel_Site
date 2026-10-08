@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Nexus Inn Hotels & Resorts VIP Concierge. Direct reservations, event planning, and 24/7 guest assistance." />
+    <title>Contact & VIP Concierge | Nexus Inn Hotels & Resorts</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-4">
+          <a href="tel:+94912569753" class="d-none d-sm-inline-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone text-gold"></i>
+            <span>+94 91 256 9753</span>
+          </a>
+          <span class="text-gold small d-flex align-items-center gap-1">
+            <i class="fa-solid fa-headset"></i> 24/7 Multilingual Concierge Desk Available
+          </span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-1">
+            <i class="fa-solid fa-coins text-gold small"></i>
+            <select class="form-select form-select-sm currency-selector-select py-0 px-2 bg-transparent text-light border-0" style="font-size: 0.8rem; cursor: pointer;">
+              <option value="USD" class="bg-dark text-light">USD ($)</option>
+              <option value="LKR" class="bg-dark text-light">LKR (Rs.)</option>
+              <option value="EUR" class="bg-dark text-light">EUR (€)</option>
+              <option value="GBP" class="bg-dark text-light">GBP (£)</option>
+            </select>
+          </div>
+          <button class="btn btn-sm btn-glass py-0 px-2 text-warning d-flex align-items-center gap-1" onclick="window.openMyBookingsModal()">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>My Stays</span>
+            <span class="badge bg-gold text-dark my-bookings-count" style="display: none;">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luxury Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-luxury sticky-top">
+      <div class="container">
+        <a class="navbar-brand-wrapper" href="../index.html">
+          <img
+            src="../assets/images/Avenra-Hotels-Logo-768x768.jpg"
+            alt="Nexus Inn Luxury Emblem"
+            class="navbar-brand-logo"
+          />
+          <div class="navbar-brand-text">
+            <span class="brand-title">NEXUS INN</span>
+            <span class="brand-subtitle">HOTELS & RESORTS</span>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler border-gold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nexusNavbar"
+          aria-controls="nexusNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars-staggered text-gold fs-4"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nexusNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms & Suites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services & Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <a href="rooms.html" class="btn btn-gold w-100 w-lg-auto">
+              <i class="fa-solid fa-key me-2"></i> Book A Stay
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <header class="page-hero-banner">
+      <div class="container">
+        <span class="section-subtitle">WE ARE AT YOUR SERVICE</span>
+        <h1 class="display-3 fw-bold text-white mb-3">Get in Touch</h1>
+        <p class="text-light max-w-600 mx-auto lead">
+          Whether you are planning a romantic escape, a royal wedding, or requiring bespoke itinerary arrangements, our VIP concierge team is here for you.
+        </p>
+      </div>
+    </header>
+
+    <!-- Direct Contact Department Cards -->
+    <section class="py-5 bg-dark-900 border-bottom border-gold">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="glass-card p-4 text-center h-100">
+              <div class="feature-icon-wrapper mb-3"><i class="fa-solid fa-hotel"></i></div>
+              <h5 class="text-white mb-1">Front Desk & Concierge</h5>
+              <p class="text-secondary small mb-3">24/7 Guest check-in, key exchange, and luggage assistance.</p>
+              <a href="tel:+94912569753" class="text-gold fw-bold text-decoration-none small d-block">
+                <i class="fa-solid fa-phone me-1"></i> +94 91 256 9753
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="glass-card p-4 text-center h-100">
+              <div class="feature-icon-wrapper mb-3"><i class="fa-solid fa-crown"></i></div>
+              <h5 class="text-white mb-1">VIP Reservations</h5>
+              <p class="text-secondary small mb-3">Suite bookings, private villa charters, and luxury packages.</p>
+              <a href="mailto:reservations@nexusinnhotels.com" class="text-gold fw-bold text-decoration-none small d-block">
+                <i class="fa-solid fa-envelope me-1"></i> reservations@nexusinnhotels.com
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="glass-card p-4 text-center h-100">
+              <div class="feature-icon-wrapper mb-3"><i class="fa-solid fa-champagne-glasses"></i></div>
+              <h5 class="text-white mb-1">Weddings & Galas</h5>
+              <p class="text-secondary small mb-3">Event directors, ballroom bookings, and custom banquets.</p>
+              <a href="mailto:events@nexusinnhotels.com" class="text-gold fw-bold text-decoration-none small d-block">
+                <i class="fa-solid fa-envelope me-1"></i> events@nexusinnhotels.com
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="glass-card p-4 text-center h-100">
+              <div class="feature-icon-wrapper mb-3"><i class="fa-brands fa-whatsapp text-success"></i></div>
+              <h5 class="text-white mb-1">WhatsApp Live Chat</h5>
+              <p class="text-secondary small mb-3">Instant messaging with our duty manager on shift.</p>
+              <a href="https://wa.me/94912569753" target="_blank" class="btn btn-gold btn-sm w-100 mt-2">
+                <i class="fa-brands fa-whatsapp me-1"></i> Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Contact Form & Location Map -->
+    <main class="py-5 bg-dark-950">
+      <div class="container py-4">
+        <div class="row g-5 align-items-start">
+          <!-- Form Column -->
+          <div class="col-lg-7">
+            <div class="glass-card p-4 p-md-5">
+              <span class="section-subtitle">SEND A MESSAGE</span>
+              <h3 class="text-white font-serif mb-4">Direct Concierge Inquiry</h3>
+
+              <form id="nexusContactForm" onsubmit="window.submitContactForm(event)">
+                <!-- Honeypot Anti-Spam (Hidden from real users) -->
+                <input type="text" id="website_hp" name="website_hp" style="display:none !important;" tabindex="-1" autocomplete="off" />
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label text-gold small fw-bold">FULL NAME</label>
+                    <input type="text" id="contactName" class="form-control-luxury" placeholder="e.g. Lord / Lady / Dr. Name" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label text-gold small fw-bold">EMAIL ADDRESS</label>
+                    <input type="email" id="contactEmail" class="form-control-luxury" placeholder="name@domain.com" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label text-gold small fw-bold">PHONE NUMBER</label>
+                    <input type="tel" id="contactPhone" class="form-control-luxury" placeholder="+94 / +1 ..." />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label text-gold small fw-bold">INQUIRY CATEGORY</label>
+                    <select id="contactCategory" class="form-select-luxury">
+                      <option value="General Inquiry">General Inquiries</option>
+                      <option value="Room Reservation">Room / Suite Reservation</option>
+                      <option value="Dining Reservation">Azure Bay Restaurant Table</option>
+                      <option value="Spa Booking">Lotus Spa Treatment</option>
+                      <option value="Weddings & Events">Wedding & Gala Banquets</option>
+                      <option value="Airport Transfer">VIP Airport Chauffeur</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label text-gold small fw-bold">SUBJECT</label>
+                    <input type="text" id="contactSubject" class="form-control-luxury" placeholder="Brief summary of your inquiry" required />
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label text-gold small fw-bold">MESSAGE</label>
+                    <textarea id="contactMessage" rows="5" class="form-control-luxury" placeholder="Please provide your dates, requirements, or questions..." required></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input bg-dark border-gold" type="checkbox" id="contactConsent" required />
+                      <label class="form-check-label text-secondary small" for="contactConsent">
+                        I agree to receive communications regarding my luxury stay inquiries in accordance with Nexus Inn Privacy Policy.
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-gold w-100 py-3">
+                      <i class="fa-solid fa-paper-plane me-2"></i> Transmit Message to Concierge
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Location & Brand Column -->
+          <div class="col-lg-5">
+            <div class="glass-card p-4 mb-4">
+              <h4 class="text-white font-serif mb-3"><i class="fa-solid fa-location-dot text-gold me-2"></i> Our Location</h4>
+              <p class="text-secondary small mb-3">
+                Nestled on the golden southern coastal belt of Sri Lanka, conveniently accessible via the Southern Expressway with direct beach frontage.
+              </p>
+
+              <ul class="list-unstyled text-secondary small mb-4">
+                <li class="mb-2"><i class="fa-solid fa-plane text-gold me-2"></i> <strong>From Colombo Airport (CMB):</strong> 1 hr 45 min via Southern Expressway</li>
+                <li class="mb-2"><i class="fa-solid fa-landmark text-gold me-2"></i> <strong>From Historic Galle Fort:</strong> 15 minutes scenic drive</li>
+                <li class="mb-2"><i class="fa-solid fa-train text-gold me-2"></i> <strong>From Coastal Railway Station:</strong> 10 minutes</li>
+              </ul>
+
+              <!-- Google Map Embed with Luxury Style -->
+              <div class="rounded overflow-hidden border border-gold" style="height: 250px;">
+                <iframe
+                  title="Nexus Inn Location Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.20786523955!2d80.14728511685938!3d6.053518500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb6932f68b%3A0x50f4a478a58a74e5!2sGalle%20Road!5e0!3m2!1sen!2slk!4v1710000000000!5m2!1sen!2slk"
+                  width="100%"
+                  height="100%"
+                  style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(85%) contrast(110%);"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="glass-card p-4 text-center">
+              <img src="../assets/images/Avenra-Hotels-Logo-768x768.jpg" alt="Logo" class="rounded-circle mb-3 border border-gold shadow" style="width: 80px; height: 80px; object-fit: cover;">
+              <h5 class="text-gold font-display mb-1">NEXUS INN HOTELS</h5>
+              <p class="text-secondary small mb-0">Experience the gold standard of Sri Lankan hospitality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Luxury 4-Column Footer -->
+    <footer class="footer-luxury">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="../assets/images/Avenra-Hotels-Logo-768x768.jpg" alt="Nexus Logo" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold-400);">
+              <div>
+                <h3 class="footer-brand-title mb-0">NEXUS INN</h3>
+                <span class="footer-brand-subtitle">HOTELS & RESORTS</span>
+              </div>
+            </div>
+            <p class="text-secondary small mb-4">
+              A sanctuary of refined tranquility where five-star hospitality meets the natural splendor of the Indian Ocean coastline.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/94912569753" target="_blank" class="footer-social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="../index.html"><i class="fa-solid fa-angle-right small text-gold"></i> Home</a></li>
+              <li><a href="rooms.html"><i class="fa-solid fa-angle-right small text-gold"></i> Rooms & Suites</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Dining & Spa</a></li>
+              <li><a href="gallery.html"><i class="fa-solid fa-angle-right small text-gold"></i> Photo Gallery</a></li>
+              <li><a href="about.html"><i class="fa-solid fa-angle-right small text-gold"></i> Our Heritage</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-angle-right small text-gold"></i> Contact Concierge</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Resort Services</h5>
+            <ul class="footer-links">
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Azure Bay Fine Dining</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Ayurvedic Lotus Spa</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Sunset Infinity Pool</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Beachfront Weddings</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Private Yacht Charters</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Reach Out to Us</h5>
+            <div class="d-flex align-items-start gap-3 mb-3 text-secondary small">
+              <i class="fa-solid fa-location-dot text-gold fs-5 mt-1"></i>
+              <span>No. 215, Galle Road, Southern Coast, Colombo / Galle, Sri Lanka</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 mb-3 text-secondary small">
+              <i class="fa-solid fa-phone text-gold fs-5"></i>
+              <span>+94 91 256 9753 / +94 11 234 5678</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 text-secondary small">
+              <i class="fa-solid fa-envelope text-gold fs-5"></i>
+              <span>reservations@nexusinnhotels.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <p class="mb-0">
+            © 2026 <strong class="text-gold">Nexus Inn Hotels Group</strong>. Handcrafted by <strong class="text-light">Chathura Lakmina</strong>. All Rights Reserved.
+          </p>
+          <div class="d-flex gap-4">
+            <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+            <a href="#" class="text-secondary small text-decoration-none">Terms of Service</a>
+            <a href="#" class="text-secondary small text-decoration-none">Guest Safety Charter</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- My Bookings Modal -->
+    <div class="modal fade" id="myBookingsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <h5 class="modal-title text-white font-serif"><i class="fa-solid fa-calendar-check text-gold me-2"></i> My Active Reservations</h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4" id="myBookingsListContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Data Repository -->
+    <script src="../assets/js/rooms-data.js"></script>
+
+    <!-- Application Logic -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

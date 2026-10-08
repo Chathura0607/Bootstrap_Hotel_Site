@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover the legacy, values, and world-class vision of Nexus Inn Hotels & Resorts — redefining 5-star luxury hospitality in Sri Lanka." />
+    <title>About Our Heritage | Nexus Inn Hotels & Resorts</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-4">
+          <a href="tel:+94912569753" class="d-none d-sm-inline-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone text-gold"></i>
+            <span>+94 91 256 9753</span>
+          </a>
+          <span class="text-gold small d-flex align-items-center gap-1">
+            <i class="fa-solid fa-award"></i> Winner of World Luxury Hotel Awards 2025
+          </span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-1">
+            <i class="fa-solid fa-coins text-gold small"></i>
+            <select class="form-select form-select-sm currency-selector-select py-0 px-2 bg-transparent text-light border-0" style="font-size: 0.8rem; cursor: pointer;">
+              <option value="USD" class="bg-dark text-light">USD ($)</option>
+              <option value="LKR" class="bg-dark text-light">LKR (Rs.)</option>
+              <option value="EUR" class="bg-dark text-light">EUR (€)</option>
+              <option value="GBP" class="bg-dark text-light">GBP (£)</option>
+            </select>
+          </div>
+          <button class="btn btn-sm btn-glass py-0 px-2 text-warning d-flex align-items-center gap-1" onclick="window.openMyBookingsModal()">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>My Stays</span>
+            <span class="badge bg-gold text-dark my-bookings-count" style="display: none;">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luxury Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-luxury sticky-top">
+      <div class="container">
+        <a class="navbar-brand-wrapper" href="../index.html">
+          <img
+            src="../assets/images/Avenra-Hotels-Logo-768x768.jpg"
+            alt="Nexus Inn Luxury Emblem"
+            class="navbar-brand-logo"
+          />
+          <div class="navbar-brand-text">
+            <span class="brand-title">NEXUS INN</span>
+            <span class="brand-subtitle">HOTELS & RESORTS</span>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler border-gold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nexusNavbar"
+          aria-controls="nexusNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars-staggered text-gold fs-4"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nexusNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms & Suites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services & Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <a href="rooms.html" class="btn btn-gold w-100 w-lg-auto">
+              <i class="fa-solid fa-key me-2"></i> Book A Stay
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <header class="page-hero-banner">
+      <div class="container">
+        <span class="section-subtitle">OUR TIMELESS STORY</span>
+        <h1 class="display-3 fw-bold text-white mb-3">The Nexus Legacy</h1>
+        <p class="text-light max-w-600 mx-auto lead">
+          Blending the legendary warmth of Sri Lankan hospitality with uncompromising 5-star architectural luxury.
+        </p>
+      </div>
+    </header>
+
+    <!-- Visual Highlights Banner -->
+    <section class="py-5 bg-dark-900 border-bottom border-gold">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="glass-card p-3 text-center h-100">
+              <img src="../assets/images/l1.png" class="img-fluid rounded mb-3" alt="World-Class Standards" style="max-height: 180px; object-fit: contain;">
+              <h5 class="text-gold">World-Class Hospitality</h5>
+              <p class="text-secondary small mb-0">Trained under international master concierges to deliver unmatched personal attention.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="glass-card p-3 text-center h-100">
+              <img src="../assets/images/l2.png" class="img-fluid rounded mb-3" alt="Modern Architecture" style="max-height: 180px; object-fit: contain;">
+              <h5 class="text-gold">Architectural Splendor</h5>
+              <p class="text-secondary small mb-0">Seamlessly marrying contemporary open-air pavilions with traditional handcrafted teak aesthetics.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="glass-card p-3 text-center h-100">
+              <img src="../assets/images/l3.png" class="img-fluid rounded mb-3" alt="Authentic Culture" style="max-height: 180px; object-fit: contain;">
+              <h5 class="text-gold">Cultural Authenticity</h5>
+              <p class="text-secondary small mb-0">Immerse yourself in authentic Ceylon spices, Ayurvedic rituals, and historical island tours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Heritage Story & Philosophy -->
+    <section class="py-5 bg-dark-950">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-subtitle">FOUNDATION OF EXCELLENCE</span>
+            <h2 class="display-5 fw-bold text-white mb-4">Born from a Passion for <span class="text-gold-gradient">Perfection</span></h2>
+            <p class="text-secondary mb-3">
+              Founded with the vision of creating an oasis where discerning travelers from around the world could experience true luxury, Nexus Inn Hotels & Resorts has emerged as one of Sri Lanka’s most distinguished hospitality brands.
+            </p>
+            <p class="text-secondary mb-4">
+              Our iconic oceanfront sanctuaries are strategically situated on pristine coastlines, offering guests front-row seats to spectacular Indian Ocean sunsets, tranquil tropical botanical gardens, and the melodic rhythm of ocean waves.
+            </p>
+            <div class="p-3 rounded mb-4" style="background: rgba(212, 175, 55, 0.08); border-left: 4px solid var(--gold-400);">
+              <blockquote class="blockquote mb-0 text-white font-serif fst-italic">
+                "We do not merely provide a place to sleep; we curate memories that linger for a lifetime."
+              </blockquote>
+              <small class="text-gold d-block mt-2">— Executive Managing Director, Nexus Inn Group</small>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img src="../assets/images/26 (1).jpg" alt="Nexus Inn Architecture" class="img-fluid rounded shadow-lg border border-gold" style="width: 100%; height: 420px; object-fit: cover;">
+              <div class="position-absolute bottom-0 end-0 bg-dark p-3 m-3 rounded border border-gold text-center" style="backdrop-filter: blur(10px);">
+                <div class="text-gold fs-2 fw-bold font-display">15+</div>
+                <div class="text-white small">Years of Distinction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Pillars -->
+    <section class="py-5 bg-dark-900">
+      <div class="container py-4">
+        <div class="section-header">
+          <span class="section-subtitle">THE NEXUS CREED</span>
+          <h2 class="section-title">Our Four Core Pillars</h2>
+          <p class="section-description">
+            Guided by principles of integrity, sustainability, and unparalleled service in every guest touchpoint.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper"><i class="fa-solid fa-heart"></i></div>
+              <h5 class="text-white mb-2">Sri Lankan Warmth</h5>
+              <p class="text-secondary small mb-0">A genuine hospitality culture that treats every traveler not just as a patron, but as honored family.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper"><i class="fa-solid fa-leaf"></i></div>
+              <h5 class="text-white mb-2">Eco-Conscious Luxury</h5>
+              <p class="text-secondary small mb-0">100% solar powered zones, zero single-use plastics, and active coral reef restoration partnerships.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h5 class="text-white mb-2">Bespoke Curation</h5>
+              <p class="text-secondary small mb-0">Tailored culinary requests, private beach cabana dinners, and customized island yacht adventures.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper"><i class="fa-solid fa-shield-halved"></i></div>
+              <h5 class="text-white mb-2">Safety & Privacy</h5>
+              <p class="text-secondary small mb-0">24/7 private security, discreet VIP entrances, and state-of-the-art health and sanitation standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Recognitions Showcase -->
+    <section class="py-5 bg-dark-950">
+      <div class="container py-4">
+        <div class="section-header">
+          <span class="section-subtitle">GLOBAL ACCOLADES</span>
+          <h2 class="section-title">Honors & Accreditations</h2>
+          <p class="section-description">
+            Recognized by global tourism bodies for setting benchmark standards in luxury and environmental hospitality.
+          </p>
+        </div>
+
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="glass-card p-4 h-100">
+              <i class="fa-solid fa-trophy fa-3x text-gold mb-3"></i>
+              <h5 class="text-white">World Luxury Hotel Awards</h5>
+              <p class="text-gold small fw-bold">Winner 2024 & 2025</p>
+              <p class="text-secondary small mb-0">Best Luxury Coastal Resort in South Asia.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="glass-card p-4 h-100">
+              <i class="fa-solid fa-certificate fa-3x text-gold mb-3"></i>
+              <h5 class="text-white">TripAdvisor Travelers' Choice</h5>
+              <p class="text-gold small fw-bold">Top 1% Worldwide</p>
+              <p class="text-secondary small mb-0">Ranked #1 for Exceptional Service & Fine Dining.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="glass-card p-4 h-100">
+              <i class="fa-solid fa-earth-americas fa-3x text-gold mb-3"></i>
+              <h5 class="text-white">Green Globe Gold Certification</h5>
+              <p class="text-gold small fw-bold">Certified Eco-Resort</p>
+              <p class="text-secondary small mb-0">Recognized for sustainable tourism & renewable energy practices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury 4-Column Footer -->
+    <footer class="footer-luxury">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="../assets/images/Avenra-Hotels-Logo-768x768.jpg" alt="Nexus Logo" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold-400);">
+              <div>
+                <h3 class="footer-brand-title mb-0">NEXUS INN</h3>
+                <span class="footer-brand-subtitle">HOTELS & RESORTS</span>
+              </div>
+            </div>
+            <p class="text-secondary small mb-4">
+              A sanctuary of refined tranquility where five-star hospitality meets the natural splendor of the Indian Ocean coastline.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/94912569753" target="_blank" class="footer-social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="../index.html"><i class="fa-solid fa-angle-right small text-gold"></i> Home</a></li>
+              <li><a href="rooms.html"><i class="fa-solid fa-angle-right small text-gold"></i> Rooms & Suites</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Dining & Spa</a></li>
+              <li><a href="gallery.html"><i class="fa-solid fa-angle-right small text-gold"></i> Photo Gallery</a></li>
+              <li><a href="about.html"><i class="fa-solid fa-angle-right small text-gold"></i> Our Heritage</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-angle-right small text-gold"></i> Contact Concierge</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Resort Services</h5>
+            <ul class="footer-links">
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Azure Bay Fine Dining</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Ayurvedic Lotus Spa</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Sunset Infinity Pool</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Beachfront Weddings</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Private Yacht Charters</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Reach Out to Us</h5>
+            <div class="d-flex align-items-start gap-3 mb-3 text-secondary small">
+              <i class="fa-solid fa-location-dot text-gold fs-5 mt-1"></i>
+              <span>No. 215, Galle Road, Southern Coast, Colombo / Galle, Sri Lanka</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 mb-3 text-secondary small">
+              <i class="fa-solid fa-phone text-gold fs-5"></i>
+              <span>+94 91 256 9753 / +94 11 234 5678</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 text-secondary small">
+              <i class="fa-solid fa-envelope text-gold fs-5"></i>
+              <span>reservations@nexusinnhotels.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <p class="mb-0">
+            © 2026 <strong class="text-gold">Nexus Inn Hotels Group</strong>. Handcrafted by <strong class="text-light">Chathura Lakmina</strong>. All Rights Reserved.
+          </p>
+          <div class="d-flex gap-4">
+            <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+            <a href="#" class="text-secondary small text-decoration-none">Terms of Service</a>
+            <a href="#" class="text-secondary small text-decoration-none">Guest Safety Charter</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- My Bookings Modal -->
+    <div class="modal fade" id="myBookingsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <h5 class="modal-title text-white font-serif"><i class="fa-solid fa-calendar-check text-gold me-2"></i> My Active Reservations</h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4" id="myBookingsListContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Data Repository -->
+    <script src="../assets/js/rooms-data.js"></script>
+
+    <!-- Application Logic -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

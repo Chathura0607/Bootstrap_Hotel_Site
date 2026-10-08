@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover five-star luxury dining, holistic Ayurvedic spa treatments, beachfront infinity pools, and fairy-tale wedding venues at Nexus Inn Hotels." />
+    <title>Services & Wellness Spa | Nexus Inn Hotels & Resorts</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-4">
+          <a href="tel:+94912569753" class="d-none d-sm-inline-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone text-gold"></i>
+            <span>+94 91 256 9753</span>
+          </a>
+          <span class="text-gold small d-flex align-items-center gap-1">
+            <i class="fa-solid fa-gem"></i> Spa Appointments & Table Reservations Available 24/7
+          </span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-1">
+            <i class="fa-solid fa-coins text-gold small"></i>
+            <select class="form-select form-select-sm currency-selector-select py-0 px-2 bg-transparent text-light border-0" style="font-size: 0.8rem; cursor: pointer;">
+              <option value="USD" class="bg-dark text-light">USD ($)</option>
+              <option value="LKR" class="bg-dark text-light">LKR (Rs.)</option>
+              <option value="EUR" class="bg-dark text-light">EUR (€)</option>
+              <option value="GBP" class="bg-dark text-light">GBP (£)</option>
+            </select>
+          </div>
+          <button class="btn btn-sm btn-glass py-0 px-2 text-warning d-flex align-items-center gap-1" onclick="window.openMyBookingsModal()">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>My Stays</span>
+            <span class="badge bg-gold text-dark my-bookings-count" style="display: none;">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luxury Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-luxury sticky-top">
+      <div class="container">
+        <a class="navbar-brand-wrapper" href="../index.html">
+          <img
+            src="../assets/images/Avenra-Hotels-Logo-768x768.jpg"
+            alt="Nexus Inn Luxury Emblem"
+            class="navbar-brand-logo"
+          />
+          <div class="navbar-brand-text">
+            <span class="brand-title">NEXUS INN</span>
+            <span class="brand-subtitle">HOTELS & RESORTS</span>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler border-gold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nexusNavbar"
+          aria-controls="nexusNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars-staggered text-gold fs-4"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nexusNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms & Suites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Services & Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <a href="rooms.html" class="btn btn-gold w-100 w-lg-auto">
+              <i class="fa-solid fa-key me-2"></i> Book A Stay
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <header class="page-hero-banner">
+      <div class="container">
+        <span class="section-subtitle">UNRIVALED HOSPITALITY</span>
+        <h1 class="display-3 fw-bold text-white mb-3">Services & Experiences</h1>
+        <p class="text-light max-w-600 mx-auto lead">
+          Immerse yourself in world-class culinary artistry, ancient Ayurvedic wellness, and personalized leisure amenities.
+        </p>
+      </div>
+    </header>
+
+    <!-- Service Categories Navigation Filter -->
+    <section class="py-5 bg-dark-900 border-bottom border-gold">
+      <div class="container">
+        <div class="filter-btn-group mb-0">
+          <button class="filter-btn service-cat-filter active" data-category="all">All Experiences</button>
+          <button class="filter-btn service-cat-filter" data-category="dining">Gourmet Dining & Grill</button>
+          <button class="filter-btn service-cat-filter" data-category="spa">Lotus Wellness Spa</button>
+          <button class="filter-btn service-cat-filter" data-category="experience">Infinity Pool & Excursions</button>
+          <button class="filter-btn service-cat-filter" data-category="events">Weddings & Banqueting</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Catalog Grid -->
+    <main class="py-5 bg-dark-950">
+      <div class="container">
+        <div id="servicesCatalogContainer" class="row">
+          <!-- Populated dynamically via main.js -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Interactive Dining & Spa Menu Showcase -->
+    <section class="py-5 bg-dark-900">
+      <div class="container py-4">
+        <div class="section-header">
+          <span class="section-subtitle">A TASTE OF PERFECTION</span>
+          <h2 class="section-title">Signature Menus & Spa Rituals</h2>
+          <p class="section-description">
+            Explore a curated selection of our most celebrated culinary delights and holistic rejuvenation treatments.
+          </p>
+        </div>
+
+        <!-- Tabs for Dining and Spa -->
+        <ul class="nav nav-pills justify-content-center mb-5 gap-2" id="menuTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active btn-gold px-4 py-2" id="dining-tab" data-bs-toggle="pill" data-bs-target="#pills-dining" type="button" role="tab">
+              <i class="fa-solid fa-utensils me-2"></i> Gourmet Dining Menu
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link btn-gold-outline px-4 py-2" id="spa-tab" data-bs-toggle="pill" data-bs-target="#pills-spa" type="button" role="tab">
+              <i class="fa-solid fa-spa me-2"></i> Ayurvedic Spa Rituals
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="menuTabsContent">
+          <!-- Dining Tab -->
+          <div class="tab-pane fade show active" id="pills-dining" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="glass-card p-4 h-100">
+                  <h4 class="h5 text-gold border-bottom border-gold pb-3 mb-4">
+                    <i class="fa-solid fa-shrimp me-2"></i> Chef’s Signature Seafood & Grill
+                  </h4>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Jumbo Galle Lagoon Lobster</h6>
+                      <small class="text-secondary">Garlic-infused herb butter, charred lemon, saffron wild rice</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 48</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Pan-Seared Yellowfin Tuna Steak</h6>
+                      <small class="text-secondary">Crusted with black pepper & coriander, avocado mousse, wasabi glaze</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 34</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Ceylon Spiced Mud Crab Curry</h6>
+                      <small class="text-secondary">Traditional clay pot preparation, rich coconut gravy, roast paan</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 38</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline">
+                    <div>
+                      <h6 class="text-white mb-1">Wagyu Beef Tenderloin MBS 7+</h6>
+                      <small class="text-secondary">Truffled potato purée, glazed baby carrots, red wine reduction</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 56</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="glass-card p-4 h-100">
+                  <h4 class="h5 text-gold border-bottom border-gold pb-3 mb-4">
+                    <i class="fa-solid fa-wine-glass me-2"></i> Sommelier Wine & Artisan Cocktails
+                  </h4>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Ceylon Sapphire Sunset</h6>
+                      <small class="text-secondary">Premium Arrack, blue curaçao, fresh passionfruit pulp, tonic water</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 14</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Smoked Cinnamon Old Fashioned</h6>
+                      <small class="text-secondary">Single malt whiskey, organic cinnamon bark smoke, Angostura bitters</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 16</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Château Margaux Grand Vin (2018)</h6>
+                      <small class="text-secondary">Premier Grand Cru Classé Bordeaux, France (By Glass / Bottle)</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 45 / $ 280</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline">
+                    <div>
+                      <h6 class="text-white mb-1">Dom Pérignon Vintage Brut Champagne</h6>
+                      <small class="text-secondary">Épernay, France — Notes of candied fruit, toasted brioche</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 240</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spa Tab -->
+          <div class="tab-pane fade" id="pills-spa" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="glass-card p-4 h-100">
+                  <h4 class="h5 text-gold border-bottom border-gold pb-3 mb-4">
+                    <i class="fa-solid fa-leaf me-2"></i> Ayurvedic Healing Therapies
+                  </h4>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Shirodhara Warm Herbal Oil Flow (60 min)</h6>
+                      <small class="text-secondary">Gentle, rhythmic stream of medicated herbal oil on the third eye chakra to calm the mind.</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 75</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Abhyanga Full-Body Synchronized Massage (90 min)</h6>
+                      <small class="text-secondary">Two therapists applying warm herbal oils tailored to your dosha body type.</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 110</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline">
+                    <div>
+                      <h6 class="text-white mb-1">Herbal Steam Bath & Sandalwood Body Scrub (75 min)</h6>
+                      <small class="text-secondary">Detoxifying steam infused with 12 medicinal herbs followed by pure red sandalwood polish.</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 85</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="glass-card p-4 h-100">
+                  <h4 class="h5 text-gold border-bottom border-gold pb-3 mb-4">
+                    <i class="fa-solid fa-spa me-2"></i> Modern Hydrotherapy & Facials
+                  </h4>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Hydra-Luxe 24K Gold Facial (60 min)</h6>
+                      <small class="text-secondary">Micro-current hydration with pure 24-karat gold leaf for glowing, radiant skin.</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 120</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <div>
+                      <h6 class="text-white mb-1">Deep Ocean Mineral Hydrotherapy (45 min)</h6>
+                      <small class="text-secondary">Underwater jet massage with Dead Sea minerals and marine botanical extracts.</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 65</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-baseline">
+                    <div>
+                      <h6 class="text-white mb-1">Couples Oceanfront Sunset Massage (90 min)</h6>
+                      <small class="text-secondary">Side-by-side aromatherapy on the private cliff pavilion with chilled champagne.</small>
+                    </div>
+                    <span class="text-warning fw-bold fs-6">$ 190</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions Accordion -->
+    <section class="py-5 bg-dark-950">
+      <div class="container py-4">
+        <div class="section-header">
+          <span class="section-subtitle">GUEST CONCIERGE FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">
+            Everything you need to know to ensure a seamless and luxurious experience at Nexus Inn Hotels.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion accordion-flush" id="nexusFaqAccordion">
+              <div class="accordion-item bg-dark-900 border border-gold mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-dark-900 text-white collapsed font-serif" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    What are the standard Check-in and Check-out times?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#nexusFaqAccordion">
+                  <div class="accordion-body text-secondary">
+                    Standard check-in is at 2:00 PM and check-out is at 12:00 PM (Noon). Early check-in from 10:00 AM and late check-out until 4:00 PM are available upon request and complimentary for VIP Club members.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-dark-900 border border-gold mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-dark-900 text-white collapsed font-serif" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Do you provide private luxury airport transfers?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#nexusFaqAccordion">
+                  <div class="accordion-body text-secondary">
+                    Yes. We provide private chauffeur-driven Mercedes-Benz S-Class and luxury SUVs from Bandaranaike International Airport (CMB) and Mattala Airport (HRI) directly to our resort. Transfers are complimentary for Presidential Suite and Villa guests.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-dark-900 border border-gold mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-dark-900 text-white collapsed font-serif" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Can you accommodate dietary requirements and kosher/halal/vegan meals?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#nexusFaqAccordion">
+                  <div class="accordion-body text-secondary">
+                    Absolutely. Our Master Executive Chefs prepare custom gluten-free, vegan, halal, kosher, and allergen-free gourmet menus upon request. Please inform our concierge prior to arrival.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-dark-900 border border-gold mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-dark-900 text-white collapsed font-serif" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                    What is the dress code for fine dining at Azure Bay?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#nexusFaqAccordion">
+                  <div class="accordion-body text-secondary">
+                    We maintain an elegant smart-casual dress code during dinner service. Collared shirts, dress trousers, or elegant evening wear are encouraged. Beachwear and sportswear are not permitted in the fine dining salon.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury 4-Column Footer -->
+    <footer class="footer-luxury">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="../assets/images/Avenra-Hotels-Logo-768x768.jpg" alt="Nexus Logo" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold-400);">
+              <div>
+                <h3 class="footer-brand-title mb-0">NEXUS INN</h3>
+                <span class="footer-brand-subtitle">HOTELS & RESORTS</span>
+              </div>
+            </div>
+            <p class="text-secondary small mb-4">
+              A sanctuary of refined tranquility where five-star hospitality meets the natural splendor of the Indian Ocean coastline.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/94912569753" target="_blank" class="footer-social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="../index.html"><i class="fa-solid fa-angle-right small text-gold"></i> Home</a></li>
+              <li><a href="rooms.html"><i class="fa-solid fa-angle-right small text-gold"></i> Rooms & Suites</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Dining & Spa</a></li>
+              <li><a href="gallery.html"><i class="fa-solid fa-angle-right small text-gold"></i> Photo Gallery</a></li>
+              <li><a href="about.html"><i class="fa-solid fa-angle-right small text-gold"></i> Our Heritage</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-angle-right small text-gold"></i> Contact Concierge</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Resort Services</h5>
+            <ul class="footer-links">
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Azure Bay Fine Dining</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Ayurvedic Lotus Spa</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Sunset Infinity Pool</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Beachfront Weddings</a></li>
+              <li><a href="services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Private Yacht Charters</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Reach Out to Us</h5>
+            <div class="d-flex align-items-start gap-3 mb-3 text-secondary small">
+              <i class="fa-solid fa-location-dot text-gold fs-5 mt-1"></i>
+              <span>No. 215, Galle Road, Southern Coast, Colombo / Galle, Sri Lanka</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 mb-3 text-secondary small">
+              <i class="fa-solid fa-phone text-gold fs-5"></i>
+              <span>+94 91 256 9753 / +94 11 234 5678</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 text-secondary small">
+              <i class="fa-solid fa-envelope text-gold fs-5"></i>
+              <span>reservations@nexusinnhotels.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <p class="mb-0">
+            © 2026 <strong class="text-gold">Nexus Inn Hotels Group</strong>. Handcrafted by <strong class="text-light">Chathura Lakmina</strong>. All Rights Reserved.
+          </p>
+          <div class="d-flex gap-4">
+            <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+            <a href="#" class="text-secondary small text-decoration-none">Terms of Service</a>
+            <a href="#" class="text-secondary small text-decoration-none">Guest Safety Charter</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Service Reservation Modal -->
+    <div class="modal fade" id="serviceInquiryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <h5 class="modal-title text-white font-serif" id="serviceInquiryTitle">Reserve Service</h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <form id="serviceInquiryForm" onsubmit="window.submitServiceInquiry(event)">
+              <input type="hidden" id="serviceInquiryHiddenId" />
+              <div class="mb-3">
+                <label class="form-label text-gold small fw-bold">GUEST FULL NAME</label>
+                <input type="text" id="serviceGuestName" class="form-control-luxury" placeholder="e.g. Eleanor Vance" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-gold small fw-bold">CONTACT PHONE / ROOM NUMBER</label>
+                <input type="text" id="serviceGuestPhone" class="form-control-luxury" placeholder="e.g. Suite 402 or +94 77..." required />
+              </div>
+              <div class="row g-2 mb-3">
+                <div class="col-6">
+                  <label class="form-label text-gold small fw-bold">DATE</label>
+                  <input type="date" id="serviceDate" class="form-control-luxury" required />
+                </div>
+                <div class="col-6">
+                  <label class="form-label text-gold small fw-bold">PREFERRED TIME</label>
+                  <input type="time" id="serviceTime" class="form-control-luxury" required />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-gold small fw-bold">NUMBER OF GUESTS / PERSONS</label>
+                <select id="serviceGuests" class="form-select-luxury">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 Persons</option>
+                  <option value="4">4 Persons</option>
+                  <option value="6+">6+ Group</option>
+                </select>
+              </div>
+              <div class="modal-footer modal-footer-luxury px-0 pb-0">
+                <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-gold">Confirm Reservation</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Bookings Modal -->
+    <div class="modal fade" id="myBookingsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <h5 class="modal-title text-white font-serif"><i class="fa-solid fa-calendar-check text-gold me-2"></i> My Active Reservations</h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4" id="myBookingsListContainer">
+            <!-- Populated via main.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Data Repository -->
+    <script src="../assets/js/rooms-data.js"></script>
+
+    <!-- Application Logic -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
