@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nexus Inn Hotels & Resorts - Experience world-class 5-star luxury, oceanfront villas, Michelin-inspired dining, and holistic Ayurvedic wellness in Sri Lanka." />
+    <meta name="keywords" content="luxury hotel sri lanka, 5 star resort, beachfront villa, galle hotel, presidential suite, boutique luxury resort" />
+    <meta name="author" content="Nexus Inn Hotels" />
+    <title>Nexus Inn Hotels & Resorts | 5-Star Luxury Oceanfront Sanctuary</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Top Announcement & Concierge Bar -->
+    <div class="top-bar">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-4">
+          <a href="tel:+94912569753" class="d-none d-sm-inline-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone text-gold"></i>
+            <span>+94 91 256 9753</span>
+          </a>
+          <a href="mailto:concierge@nexusinnhotels.com" class="d-none d-md-inline-flex align-items-center gap-2">
+            <i class="fa-solid fa-envelope text-gold"></i>
+            <span>concierge@nexusinnhotels.com</span>
+          </a>
+          <span class="text-gold small d-flex align-items-center gap-1">
+            <i class="fa-solid fa-gem"></i> Best Rate Guarantee & VIP Welcome Drink
+          </span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <!-- Currency Selector -->
+          <div class="d-flex align-items-center gap-1">
+            <i class="fa-solid fa-coins text-gold small"></i>
+            <select class="form-select form-select-sm currency-selector-select py-0 px-2 bg-transparent text-light border-0" style="font-size: 0.8rem; cursor: pointer;">
+              <option value="USD" class="bg-dark text-light">USD ($)</option>
+              <option value="LKR" class="bg-dark text-light">LKR (Rs.)</option>
+              <option value="EUR" class="bg-dark text-light">EUR (€)</option>
+              <option value="GBP" class="bg-dark text-light">GBP (£)</option>
+            </select>
+          </div>
+
+          <!-- My Bookings Trigger -->
+          <button class="btn btn-sm btn-glass py-0 px-2 text-warning d-flex align-items-center gap-1" onclick="window.openMyBookingsModal()">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>My Stays</span>
+            <span class="badge bg-gold text-dark my-bookings-count" style="display: none;">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luxury Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-luxury sticky-top">
+      <div class="container">
+        <a class="navbar-brand-wrapper" href="/index.html">
+          <img
+            src="/assets/images/Avenra-Hotels-Logo-768x768.jpg"
+            alt="Nexus Inn Luxury Emblem"
+            class="navbar-brand-logo"
+          />
+          <div class="navbar-brand-text">
+            <h1 class="brand-title">NEXUS INN</h1>
+            <span class="brand-subtitle">HOTELS & RESORTS</span>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler border-gold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nexusNavbar"
+          aria-controls="nexusNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars-staggered text-gold fs-4"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nexusNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/rooms.html">Rooms & Suites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/services.html">Services & Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <button class="btn btn-gold w-100 w-lg-auto" onclick="window.openBookingModal('deluxe-ocean-view')">
+              <i class="fa-solid fa-key me-2"></i> Book A Stay
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Cinematic Carousel & Interactive Booking Bar -->
+    <header class="hero-section">
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade hero-carousel"
+        data-bs-ride="carousel"
+        data-bs-interval="6000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assets/images/0S3A2445 (1).jpg"
+              alt="Oceanfront Infinity Pool & Sunset"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/images/Bayfonte-BG.jpg"
+              alt="Michelin Star Fine Dining Restaurant"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/images/Still0317_00003.jpg"
+              alt="Luxury Tropical Villa Sanctuary"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/images/26 (1).jpg"
+              alt="City Grand Palace & Suites"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-10 col-xl-9">
+            <div class="hero-badge">
+              <i class="fa-solid fa-crown text-gold"></i>
+              <span>Voted World Luxury Hotel of the Year 2025</span>
+            </div>
+            <h1 class="hero-title">
+              Where Bespoke Elegance Meets <span class="text-gold-gradient">Timeless Serenity</span>
+            </h1>
+            <p class="hero-lead">
+              Surrender to uncompromised luxury on Sri Lanka’s golden southern coast. Enjoy private infinity pools, Michelin-inspired dining, and 24/7 personal butler service tailored to your desires.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="/pages/rooms.html" class="btn btn-gold btn-lg">
+                <i class="fa-solid fa-compass me-2"></i> Explore Suites
+              </a>
+              <button class="btn btn-glass btn-lg" data-bs-toggle="modal" data-bs-target="#videoTourModal">
+                <i class="fa-solid fa-circle-play me-2 text-gold"></i> Watch Video Tour
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Interactive Live Booking Bar -->
+        <div class="booking-engine-bar">
+          <form id="heroBookingQuickForm" onsubmit="event.preventDefault(); window.openBookingModal(document.getElementById('heroRoomType').value);">
+            <div class="row g-3 align-items-end">
+              <div class="col-lg-3 col-md-6">
+                <div class="booking-field-group">
+                  <label><i class="fa-regular fa-calendar-days me-1 text-gold"></i> Check-in Date</label>
+                  <input type="date" id="heroCheckin" class="form-control-luxury checkin-date-input" required />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="booking-field-group">
+                  <label><i class="fa-regular fa-calendar-check me-1 text-gold"></i> Check-out Date</label>
+                  <input type="date" id="heroCheckout" class="form-control-luxury checkout-date-input" required />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="booking-field-group">
+                  <label><i class="fa-solid fa-user-group me-1 text-gold"></i> Guests</label>
+                  <select id="heroGuests" class="form-select-luxury">
+                    <option value="1">1 Adult</option>
+                    <option value="2" selected>2 Adults</option>
+                    <option value="3">3 Guests (Family)</option>
+                    <option value="4">4+ VIP Suite</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="booking-field-group">
+                  <label><i class="fa-solid fa-bed me-1 text-gold"></i> Room Type</label>
+                  <select id="heroRoomType" class="form-select-luxury">
+                    <option value="deluxe-ocean-view">Deluxe Ocean View</option>
+                    <option value="presidential-suite">Presidential Penthouse</option>
+                    <option value="luxury-beachfront-villa">Beachfront Pool Villa</option>
+                    <option value="executive-suite">Executive Grand Suite</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12">
+                <button type="submit" class="btn btn-gold w-100 py-2">
+                  <i class="fa-solid fa-magnifying-glass me-1"></i> Check Rates
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Why Choose Nexus Inn Section -->
+    <section class="py-5 bg-dark-900">
+      <div class="container py-4">
+        <div class="section-header">
+          <span class="section-subtitle">THE 5-STAR STANDARD</span>
+          <h2 class="section-title">An Unrivaled Haven of Distinction</h2>
+          <p class="section-description">
+            Every element of Nexus Inn is crafted to transcend ordinary hospitality into an unforgettable sensory journey.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-water"></i>
+              </div>
+              <h4 class="h5 text-white mb-2">Oceanfront Infinity Pools</h4>
+              <p class="text-secondary small mb-0">
+                Temperature-controlled cliffside pools merging seamlessly with the horizon and private swim-up cocktail cabanas.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <h4 class="h5 text-white mb-2">Michelin Gastronomy</h4>
+              <p class="text-secondary small mb-0">
+                Fresh coastal seafood, farm-to-table organic produce, and vintage cellars curated by master sommeliers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-spa"></i>
+              </div>
+              <h4 class="h5 text-white mb-2">Ayurvedic Sanctuary</h4>
+              <p class="text-secondary small mb-0">
+                Authentic 5,000-year-old herbal therapies, sound healing, steam baths, and sunrise yoga on private ocean decks.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-bell-concierge"></i>
+              </div>
+              <h4 class="h5 text-white mb-2">24/7 Butler Service</h4>
+              <p class="text-secondary small mb-0">
+                Dedicated personal hospitality concierges attending to your every itinerary need, packing, and private reservations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Suites & Rooms Showcase -->
+    <section class="py-5 bg-dark-950">
+      <div class="container py-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+          <div>
+            <span class="section-subtitle">SIGNATURE ACCOMMODATIONS</span>
+            <h2 class="section-title mb-0">Featured Rooms & Penthouse Suites</h2>
+          </div>
+          <a href="/pages/rooms.html" class="btn btn-gold-outline mt-3 mt-md-0">
+            View All 12 Suites <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <!-- Deluxe Ocean View Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="/assets/images/G1.jpg" alt="Deluxe Ocean View Room" />
+                <span class="room-badge-category">Ocean View</span>
+                <div class="room-price-tag">
+                  <div class="room-price-val currency-display-value" data-usd="180">$ 180</div>
+                  <div class="room-price-period">per night</div>
+                </div>
+              </div>
+              <div class="room-body">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-gold small"><i class="fa-solid fa-star"></i> 4.9 (128)</span>
+                  <span class="text-muted small"><i class="fa-solid fa-eye me-1 text-gold"></i>Direct Ocean Front</span>
+                </div>
+                <h4 class="room-title">Deluxe Ocean View Room</h4>
+                <p class="text-muted small mb-3">Panoramic Indian Ocean sunsets with a private balcony and deep soaking tub.</p>
+                <div class="room-specs">
+                  <span><i class="fa-solid fa-bed"></i> King Bed</span>
+                  <span><i class="fa-solid fa-user-group"></i> Up to 2</span>
+                  <span><i class="fa-solid fa-vector-square"></i> 520 sq.ft</span>
+                </div>
+                <div class="room-amenities-pills">
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>Free High-Speed Wi-Fi</span>
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>Private Balcony</span>
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>Rain Shower & Tub</span>
+                </div>
+                <div class="room-footer">
+                  <button class="btn btn-gold flex-grow-1" onclick="window.openBookingModal('deluxe-ocean-view')">
+                    Book Now
+                  </button>
+                  <button class="btn btn-glass" title="View Details" onclick="window.openRoomDetailsModal('deluxe-ocean-view')">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                  <button class="btn btn-glass btn-compare" data-compare-id="deluxe-ocean-view" title="Add to Compare" onclick="window.toggleCompareRoom('deluxe-ocean-view')">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Presidential Suite Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="/assets/images/G6.jpg" alt="Royal Presidential Suite" />
+                <span class="room-badge-category">Penthouse</span>
+                <div class="room-price-tag">
+                  <div class="room-price-val currency-display-value" data-usd="450">$ 450</div>
+                  <div class="room-price-period">per night</div>
+                </div>
+              </div>
+              <div class="room-body">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-gold small"><i class="fa-solid fa-star"></i> 5.0 (84)</span>
+                  <span class="text-muted small"><i class="fa-solid fa-eye me-1 text-gold"></i>360° Panorama</span>
+                </div>
+                <h4 class="room-title">Royal Presidential Suite</h4>
+                <p class="text-muted small mb-3">The pinnacle of bespoke opulence with a personal butler and private plunge pool.</p>
+                <div class="room-specs">
+                  <span><i class="fa-solid fa-bed"></i> 2 Master Kings</span>
+                  <span><i class="fa-solid fa-user-group"></i> Up to 4</span>
+                  <span><i class="fa-solid fa-vector-square"></i> 1,450 sq.ft</span>
+                </div>
+                <div class="room-amenities-pills">
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>24/7 Butler</span>
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>Plunge Pool</span>
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>VIP Chauffeur</span>
+                </div>
+                <div class="room-footer">
+                  <button class="btn btn-gold flex-grow-1" onclick="window.openBookingModal('presidential-suite')">
+                    Book Now
+                  </button>
+                  <button class="btn btn-glass" title="View Details" onclick="window.openRoomDetailsModal('presidential-suite')">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                  <button class="btn btn-glass btn-compare" data-compare-id="presidential-suite" title="Add to Compare" onclick="window.toggleCompareRoom('presidential-suite')">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beachfront Villa Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="/assets/images/Still0317_00003.jpg" alt="Luxury Beachfront Pool Villa" />
+                <span class="room-badge-category">Private Villa</span>
+                <div class="room-price-tag">
+                  <div class="room-price-val currency-display-value" data-usd="320">$ 320</div>
+                  <div class="room-price-period">per night</div>
+                </div>
+              </div>
+              <div class="room-body">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-gold small"><i class="fa-solid fa-star"></i> 4.95 (112)</span>
+                  <span class="text-muted small"><i class="fa-solid fa-eye me-1 text-gold"></i>Private Beachfront</span>
+                </div>
+                <h4 class="room-title">Luxury Beachfront Pool Villa</h4>
+                <p class="text-muted small mb-3">Secluded sanctuary with a private pool and direct private gate to golden sands.</p>
+                <div class="room-specs">
+                  <span><i class="fa-solid fa-bed"></i> King + Daybed</span>
+                  <span><i class="fa-solid fa-user-group"></i> Up to 3</span>
+                  <span><i class="fa-solid fa-vector-square"></i> 980 sq.ft</span>
+                </div>
+                <div class="room-amenities-pills">
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>Private Heated Pool</span>
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>Direct Beach Gate</span>
+                  <span class="amenity-pill"><i class="fa-solid fa-check text-gold me-1"></i>Floating Breakfast</span>
+                </div>
+                <div class="room-footer">
+                  <button class="btn btn-gold flex-grow-1" onclick="window.openBookingModal('luxury-beachfront-villa')">
+                    Book Now
+                  </button>
+                  <button class="btn btn-glass" title="View Details" onclick="window.openRoomDetailsModal('luxury-beachfront-villa')">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                  <button class="btn btn-glass btn-compare" data-compare-id="luxury-beachfront-villa" title="Add to Compare" onclick="window.toggleCompareRoom('luxury-beachfront-villa')">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Tour Experience Section -->
+    <section class="py-5 bg-dark-900 position-relative">
+      <div class="container py-4">
+        <div class="section-header">
+          <span class="section-subtitle">CINEMATIC JOURNEY</span>
+          <h2 class="section-title">Immerse Yourself in Nexus Inn</h2>
+          <p class="section-description">
+            Watch our official property tour and discover the breathtaking landscapes, architecture, and luxury amenities awaiting your arrival.
+          </p>
+        </div>
+
+        <div class="video-tour-container position-relative">
+          <video
+            id="mainTourVideo"
+            src="/assets/videos/AQMFmand5FOsk7VQVe_gy1lzFnhdnaEyTq3wQMp5ZXTC78V75T8OeB-Ryuxoev4-Dr3tRREA1kB5PV9wyXalPo-o.mp4"
+            poster="/assets/images/Bayfonte-BG.jpg"
+            controls
+            playsinline
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers & Exclusive Packages -->
+    <section class="py-5 bg-dark-950">
+      <div class="container py-4">
+        <div class="section-header">
+          <span class="section-subtitle">CURATED EXPERIENCES</span>
+          <h2 class="section-title">Seasonal Privileges & Packages</h2>
+          <p class="section-description">
+            Take advantage of our exclusive seasonal promotions and curated holiday escapes with bonus luxury perks.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column">
+              <span class="badge bg-gold align-self-start mb-3">SAVE 20% OFF</span>
+              <h4 class="h5 text-white mb-2">Honeymoon & Romance Escape</h4>
+              <p class="text-secondary small mb-3">
+                Includes champagne breakfast in bed, private candlelight beach dinner for two, a couple’s Ayurvedic massage, and airport luxury transfer.
+              </p>
+              <div class="mt-auto">
+                <div class="small text-gold mb-2"><i class="fa-solid fa-tag me-1"></i> Use Code: <strong>NEXUSVIP</strong></div>
+                <button class="btn btn-gold w-100 btn-sm" onclick="window.openBookingModal('luxury-beachfront-villa')">
+                  Claim Romance Package
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column">
+              <span class="badge bg-gold align-self-start mb-3">SPECIAL BENEFIT</span>
+              <h4 class="h5 text-white mb-2">Ayurvedic Rejuvenation Week</h4>
+              <p class="text-secondary small mb-3">
+                7 nights in an Ocean View Suite, daily personalized wellness consultations, organic detox gourmet meals, and daily private yoga sessions.
+              </p>
+              <div class="mt-auto">
+                <div class="small text-gold mb-2"><i class="fa-solid fa-tag me-1"></i> Use Code: <strong>EARLYBIRD</strong></div>
+                <button class="btn btn-gold w-100 btn-sm" onclick="window.openBookingModal('deluxe-ocean-view')">
+                  Claim Wellness Package
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column">
+              <span class="badge bg-gold align-self-start mb-3">WELCOME GIFT</span>
+              <h4 class="h5 text-white mb-2">First-Time Guest VIP Perk</h4>
+              <p class="text-secondary small mb-3">
+                Enjoy 10% off your entire stay, complimentary high tea on arrival, early 11:00 AM check-in, and late 3:00 PM checkout.
+              </p>
+              <div class="mt-auto">
+                <div class="small text-gold mb-2"><i class="fa-solid fa-tag me-1"></i> Use Code: <strong>WELCOME10</strong></div>
+                <button class="btn btn-gold w-100 btn-sm" onclick="window.openBookingModal('executive-suite')">
+                  Claim Welcome Offer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Counter Banner -->
+    <section class="py-5 bg-dark-850 border-top border-bottom border-gold">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-counter-box">
+              <div class="stat-counter-number">500+</div>
+              <div class="stat-counter-label">Luxury Rooms & Villas</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-counter-box">
+              <div class="stat-counter-number">99.4%</div>
+              <div class="stat-counter-label">Guest Satisfaction</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-counter-box">
+              <div class="stat-counter-number">18+</div>
+              <div class="stat-counter-label">Global Hospitality Awards</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-counter-box">
+              <div class="stat-counter-number">24/7</div>
+              <div class="stat-counter-label">Bespoke VIP Concierge</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Guest Reviews & Testimonials -->
+    <section class="py-5 bg-dark-900">
+      <div class="container py-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+          <div>
+            <span class="section-subtitle">AUTHENTIC EXPERIENCES</span>
+            <h2 class="section-title mb-0">What Our Distinguished Guests Say</h2>
+          </div>
+          <button class="btn btn-gold-outline mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#writeReviewModal">
+            <i class="fa-regular fa-pen-to-square me-2"></i> Write a Review
+          </button>
+        </div>
+
+        <div id="reviewsListContainer" class="row">
+          <!-- Dynamically populated via main.js & localStorage -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP Newsletter Subscription Banner -->
+    <section class="py-5 bg-dark-950 position-relative overflow-hidden">
+      <div class="container py-4">
+        <div class="glass-card p-5 text-center position-relative">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <i class="fa-solid fa-envelope-open-text fa-3x text-gold mb-3"></i>
+              <h3 class="display-6 text-white mb-2">Join the Nexus Privilege Club</h3>
+              <p class="text-secondary mb-4">
+                Subscribe to receive private invitations to seasonal retreats, member-only dining privileges, and exclusive rate codes directly to your inbox.
+              </p>
+              <form id="newsletterForm" class="d-flex flex-column flex-sm-row gap-2 justify-content-center" onsubmit="window.submitNewsletterForm(event)">
+                <input
+                  type="email"
+                  id="newsletterEmailInput"
+                  class="form-control-luxury px-3 py-2 text-center text-sm-start"
+                  style="max-width: 400px;"
+                  placeholder="Enter your VIP email address"
+                  required
+                />
+                <button type="submit" class="btn btn-gold px-4">
+                  Subscribe Privileges
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury 4-Column Footer -->
+    <footer class="footer-luxury">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="/assets/images/Avenra-Hotels-Logo-768x768.jpg" alt="Nexus Logo" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold-400);">
+              <div>
+                <h3 class="footer-brand-title mb-0">NEXUS INN</h3>
+                <span class="footer-brand-subtitle">HOTELS & RESORTS</span>
+              </div>
+            </div>
+            <p class="text-secondary small mb-4">
+              A sanctuary of refined tranquility where five-star hospitality meets the natural splendor of the Indian Ocean coastline.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/94912569753" target="_blank" class="footer-social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="/index.html"><i class="fa-solid fa-angle-right small text-gold"></i> Home</a></li>
+              <li><a href="/pages/rooms.html"><i class="fa-solid fa-angle-right small text-gold"></i> Rooms & Suites</a></li>
+              <li><a href="/pages/services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Dining & Spa</a></li>
+              <li><a href="/pages/gallery.html"><i class="fa-solid fa-angle-right small text-gold"></i> Photo Gallery</a></li>
+              <li><a href="/pages/about.html"><i class="fa-solid fa-angle-right small text-gold"></i> Our Heritage</a></li>
+              <li><a href="/pages/contact.html"><i class="fa-solid fa-angle-right small text-gold"></i> Contact Concierge</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Resort Services</h5>
+            <ul class="footer-links">
+              <li><a href="/pages/services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Azure Bay Fine Dining</a></li>
+              <li><a href="/pages/services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Ayurvedic Lotus Spa</a></li>
+              <li><a href="/pages/services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Sunset Infinity Pool</a></li>
+              <li><a href="/pages/services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Beachfront Weddings</a></li>
+              <li><a href="/pages/services.html"><i class="fa-solid fa-angle-right small text-gold"></i> Private Yacht Charters</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Reach Out to Us</h5>
+            <div class="d-flex align-items-start gap-3 mb-3 text-secondary small">
+              <i class="fa-solid fa-location-dot text-gold fs-5 mt-1"></i>
+              <span>No. 215, Galle Road, Southern Coast, Colombo / Galle, Sri Lanka</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 mb-3 text-secondary small">
+              <i class="fa-solid fa-phone text-gold fs-5"></i>
+              <span>+94 91 256 9753 / +94 11 234 5678</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 text-secondary small">
+              <i class="fa-solid fa-envelope text-gold fs-5"></i>
+              <span>reservations@nexusinnhotels.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <p class="mb-0">
+            © 2026 <strong class="text-gold">Nexus Inn Hotels Group</strong>. Handcrafted by <strong class="text-light">Chathura Lakmina</strong>. All Rights Reserved.
+          </p>
+          <div class="d-flex gap-4">
+            <a href="#" class="text-secondary small text-decoration-none hover-gold">Privacy Policy</a>
+            <a href="#" class="text-secondary small text-decoration-none hover-gold">Terms of Service</a>
+            <a href="#" class="text-secondary small text-decoration-none hover-gold">Guest Safety Charter</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ==========================================
+         GLOBAL MODALS & DRAWERS
+         ========================================== -->
+
+    <!-- 1. Room Booking Modal -->
+    <div class="modal fade" id="roomBookingModal" tabindex="-1" aria-labelledby="roomBookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <div>
+              <h5 class="modal-title font-serif text-white" id="roomBookingModalLabel">
+                <i class="fa-solid fa-crown text-gold me-2"></i> Reserve Your Stay
+              </h5>
+              <small class="text-secondary">Instant real-time booking with Best Rate Guarantee</small>
+            </div>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <form id="luxuryBookingForm" onsubmit="window.submitBookingForm(event)">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label text-gold small fw-bold">SELECT SUITE / VILLA</label>
+                  <select id="bookingModalRoomSelect" class="form-select-luxury" onchange="window.updateBookingCostEstimate()" required>
+                    <option value="deluxe-ocean-view">Deluxe Ocean View Room</option>
+                    <option value="presidential-suite">Royal Presidential Penthouse</option>
+                    <option value="luxury-beachfront-villa">Luxury Beachfront Pool Villa</option>
+                    <option value="executive-suite">Executive Grand Suite</option>
+                    <option value="family-garden-suite">Family Garden Oasis Suite</option>
+                    <option value="panoramic-sky-penthouse">Panoramic Sky Penthouse</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label text-gold small fw-bold">GUESTS OCCUPANCY</label>
+                  <select id="bookingModalGuests" class="form-select-luxury" required>
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5+ Family</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label text-gold small fw-bold">CHECK-IN DATE</label>
+                  <input type="date" id="bookingModalCheckin" class="form-control-luxury checkin-date-input" required />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label text-gold small fw-bold">CHECK-OUT DATE</label>
+                  <input type="date" id="bookingModalCheckout" class="form-control-luxury checkout-date-input" required />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label text-gold small fw-bold">FULL NAME</label>
+                  <input type="text" id="bookingGuestName" class="form-control-luxury" placeholder="e.g. Lord/Lady / Mr / Mrs" required />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label text-gold small fw-bold">EMAIL ADDRESS</label>
+                  <input type="email" id="bookingGuestEmail" class="form-control-luxury" placeholder="name@domain.com" required />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label text-gold small fw-bold">PHONE NUMBER</label>
+                  <input type="tel" id="bookingGuestPhone" class="form-control-luxury" placeholder="+94 / +1 ..." required />
+                </div>
+
+                <div class="col-md-8">
+                  <label class="form-label text-gold small fw-bold">SPECIAL REQUESTS / ARRIVAL TIME</label>
+                  <input type="text" id="bookingSpecialRequests" class="form-control-luxury" placeholder="e.g. Champagne on arrival, Airport pickup, High floor" />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label text-gold small fw-bold">PROMO / VOUCHER CODE</label>
+                  <div class="input-group">
+                    <input type="text" id="bookingModalPromo" class="form-control-luxury" placeholder="e.g. WELCOME10" />
+                    <button class="btn btn-gold btn-sm" type="button" onclick="window.updateBookingCostEstimate()">Apply</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Cost Breakdown Box -->
+              <div class="mt-4 p-3 rounded" style="background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-glass);">
+                <h6 class="text-gold small fw-bold text-uppercase mb-2"><i class="fa-solid fa-receipt me-1"></i> Live Fare Summary</h6>
+                <div class="d-flex justify-content-between small text-secondary mb-1">
+                  <span>Duration:</span>
+                  <span id="estimateNightsCount" class="text-light">1 night</span>
+                </div>
+                <div class="d-flex justify-content-between small text-secondary mb-1">
+                  <span>Room Subtotal:</span>
+                  <span id="estimateSubtotal" class="text-light">$ 180</span>
+                </div>
+                <div id="estimateDiscountRow" class="d-flex justify-content-between small text-success mb-1" style="display: none;">
+                  <span>Promo Discount:</span>
+                  <span id="estimateDiscount">-$ 0</span>
+                </div>
+                <div class="d-flex justify-content-between small text-secondary mb-1">
+                  <span>Service Charge (10%):</span>
+                  <span id="estimateServiceFee" class="text-light">$ 18</span>
+                </div>
+                <div class="d-flex justify-content-between small text-secondary mb-2">
+                  <span>Govt. Luxury Tax (5%):</span>
+                  <span id="estimateTax" class="text-light">$ 9</span>
+                </div>
+                <hr class="border-secondary my-2">
+                <div class="d-flex justify-content-between fs-5 fw-bold text-white">
+                  <span>Estimated Total:</span>
+                  <span id="estimateTotal" class="text-warning">$ 207</span>
+                </div>
+              </div>
+
+              <div class="modal-footer modal-footer-luxury px-0 pb-0 mt-3">
+                <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-gold px-4">
+                  <i class="fa-solid fa-lock me-2"></i> Confirm & Guarantee Stay
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Booking Confirmation Voucher Modal -->
+    <div class="modal fade" id="bookingConfirmationModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury bg-success bg-opacity-25">
+            <h5 class="modal-title text-success font-serif">
+              <i class="fa-solid fa-circle-check me-2"></i> Reservation Guaranteed & Confirmed
+            </h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="booking-voucher">
+              <div class="voucher-watermark">CONFIRMED</div>
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                  <h4 class="text-gold font-display mb-0">NEXUS INN</h4>
+                  <small class="text-muted letter-spacing-2">HOTELS & RESORTS LUXURY VOUCHER</small>
+                </div>
+                <div class="text-end">
+                  <span class="badge bg-gold text-dark fs-6 px-3 py-2" id="confirmVoucherRef">NX-2026-9812</span>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Primary Guest:</span>
+                  <strong class="text-white fs-6" id="confirmVoucherGuest">Guest Name</strong>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Accompanied By:</span>
+                  <strong class="text-white fs-6" id="confirmVoucherGuests">2 Guests</strong>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Reserved Suite:</span>
+                  <strong class="text-gold fs-6" id="confirmVoucherRoom">Deluxe Ocean View Room</strong>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Dates of Stay:</span>
+                  <strong class="text-white fs-6" id="confirmVoucherDates">Oct 10 → Oct 12 (2 nights)</strong>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Contact Email:</span>
+                  <span class="text-white small" id="confirmVoucherEmail">guest@domain.com</span>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Contact Phone:</span>
+                  <span class="text-white small" id="confirmVoucherPhone">+94 77 123 4567</span>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Booking Timestamp:</span>
+                  <span class="text-white small" id="confirmVoucherDate">Today</span>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Total Guaranteed:</span>
+                  <strong class="text-warning fs-5" id="confirmVoucherTotal">$ 360</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="alert alert-dark mt-3 border-gold small text-secondary">
+              <i class="fa-solid fa-circle-info text-gold me-2"></i>
+              A confirmation email and VIP itinerary have been registered in our central concierge desk. Please present this voucher reference upon check-in.
+            </div>
+          </div>
+          <div class="modal-footer modal-footer-luxury">
+            <button type="button" class="btn btn-glass" onclick="window.printCleanVoucher()"><i class="fa-solid fa-print me-2"></i> Print Voucher</button>
+            <button type="button" class="btn btn-gold" data-bs-dismiss="modal">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. My Bookings Modal -->
+    <div class="modal fade" id="myBookingsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <h5 class="modal-title text-white font-serif"><i class="fa-solid fa-calendar-check text-gold me-2"></i> My Active Reservations</h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4" id="myBookingsListContainer">
+            <!-- Populated via main.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Room Details Modal -->
+    <div class="modal fade" id="roomDetailsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <div>
+              <h5 class="modal-title text-white font-serif" id="roomDetailsTitle">Deluxe Ocean View Room</h5>
+              <small class="text-gold" id="roomDetailsTagline">Panoramic Indian Ocean sunsets</small>
+            </div>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <!-- Carousel inside modal -->
+            <div id="roomDetailsCarousel" class="carousel slide mb-4 rounded overflow-hidden" data-bs-ride="carousel">
+              <div class="carousel-inner" id="roomDetailsCarouselInner"></div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-sm-3 col-6 text-center p-2 rounded bg-dark-800 border border-gold">
+                <small class="text-muted d-block">CATEGORY</small>
+                <strong class="text-gold" id="roomDetailsCategory">Ocean View</strong>
+              </div>
+              <div class="col-sm-3 col-6 text-center p-2 rounded bg-dark-800 border border-gold">
+                <small class="text-muted d-block">BED TYPE</small>
+                <strong class="text-white" id="roomDetailsBed">King Bed</strong>
+              </div>
+              <div class="col-sm-3 col-6 text-center p-2 rounded bg-dark-800 border border-gold">
+                <small class="text-muted d-block">CAPACITY</small>
+                <strong class="text-white" id="roomDetailsGuests">Up to 2</strong>
+              </div>
+              <div class="col-sm-3 col-6 text-center p-2 rounded bg-dark-800 border border-gold">
+                <small class="text-muted d-block">ROOM SIZE</small>
+                <strong class="text-white" id="roomDetailsSize">520 sq.ft</strong>
+              </div>
+            </div>
+
+            <h6 class="text-gold fw-bold text-uppercase mb-2">Description</h6>
+            <p class="text-secondary small mb-4" id="roomDetailsDescription"></p>
+
+            <h6 class="text-gold fw-bold text-uppercase mb-2">Suite Amenities</h6>
+            <div class="row mb-4" id="roomDetailsAmenities"></div>
+
+            <h6 class="text-gold fw-bold text-uppercase mb-2">Included VIP Privileges</h6>
+            <div id="roomDetailsPerks" class="mb-4"></div>
+
+            <div class="alert alert-dark border-secondary small text-muted">
+              <i class="fa-solid fa-shield-halved text-gold me-2"></i>
+              <span id="roomDetailsCancellation">Free cancellation up to 48 hours before check-in.</span>
+            </div>
+          </div>
+          <div class="modal-footer modal-footer-luxury d-flex justify-content-between">
+            <span class="fs-4 text-warning fw-bold" id="roomDetailsPrice">$ 180 / night</span>
+            <button type="button" class="btn btn-gold px-4" id="roomDetailsBookBtn">
+              Book This Suite
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Write Review Modal -->
+    <div class="modal fade" id="writeReviewModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <h5 class="modal-title text-white font-serif"><i class="fa-regular fa-star text-gold me-2"></i> Share Your Experience</h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <form id="writeReviewForm" onsubmit="window.submitReviewForm(event)">
+              <div class="mb-3">
+                <label class="form-label text-gold small fw-bold">YOUR NAME</label>
+                <input type="text" id="reviewAuthorName" class="form-control-luxury" placeholder="e.g. Sarah Jenkins" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-gold small fw-bold">YOUR COUNTRY / LOCATION</label>
+                <input type="text" id="reviewAuthorCountry" class="form-control-luxury" placeholder="e.g. United Kingdom" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-gold small fw-bold">SUITE / VILLA STAYED IN</label>
+                <select id="reviewRoomSelect" class="form-select-luxury">
+                  <option value="Deluxe Ocean View Room">Deluxe Ocean View Room</option>
+                  <option value="Royal Presidential Suite">Royal Presidential Suite</option>
+                  <option value="Luxury Beachfront Pool Villa">Luxury Beachfront Pool Villa</option>
+                  <option value="Executive Grand Suite">Executive Grand Suite</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-gold small fw-bold">RATING (5-STAR SCALE)</label>
+                <select id="reviewRatingSelect" class="form-select-luxury">
+                  <option value="5" selected>★★★★★ 5 Stars - Exceptional</option>
+                  <option value="4">★★★★☆ 4 Stars - Very Good</option>
+                  <option value="3">★★★☆☆ 3 Stars - Good</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-gold small fw-bold">YOUR REVIEW & COMMENTS</label>
+                <textarea id="reviewCommentText" rows="4" class="form-control-luxury" placeholder="Tell other travelers about the service, amenities, and dining..." required></textarea>
+              </div>
+              <div class="modal-footer modal-footer-luxury px-0 pb-0">
+                <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-gold">Publish Review</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Video Tour Modal -->
+    <div class="modal fade" id="videoTourModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content modal-content-luxury p-0 bg-black">
+          <div class="modal-header modal-header-luxury border-0 p-3">
+            <h5 class="modal-title text-white font-serif"><i class="fa-solid fa-film text-gold me-2"></i> Nexus Inn Official Experience Tour</h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <video
+              src="/assets/videos/AQMFmand5FOsk7VQVe_gy1lzFnhdnaEyTq3wQMp5ZXTC78V75T8OeB-Ryuxoev4-Dr3tRREA1kB5PV9wyXalPo-o.mp4"
+              class="w-100"
+              style="max-height: 80vh; object-fit: contain;"
+              controls
+              autoplay
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Room Comparison Modal -->
+    <div class="modal fade" id="roomComparisonModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content modal-content-luxury">
+          <div class="modal-header modal-header-luxury">
+            <h5 class="modal-title text-white font-serif"><i class="fa-solid fa-scale-balanced text-gold me-2"></i> Side-by-Side Suite Comparison</h5>
+            <button type="button" class="btn-close btn-close-luxury" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4" id="roomComparisonContent">
+            <!-- Populated via main.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Room Comparison Drawer/Bar -->
+    <div id="roomCompareFloatingBar" class="room-compare-bar">
+      <div class="d-flex align-items-center gap-2">
+        <div class="room-compare-thumbs d-flex align-items-center me-2" id="roomCompareThumbs"></div>
+        <span class="text-white small fw-bold">
+          <i class="fa-solid fa-scale-balanced text-gold me-1"></i> <span id="roomCompareCount" class="badge bg-gold text-dark ms-1">0</span> <span class="d-none d-sm-inline ms-1">Selected</span>
+        </span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <button class="btn btn-gold btn-sm rounded-pill px-3 py-2 shadow" onclick="window.openComparisonModal()">
+          <i class="fa-solid fa-table-columns me-1"></i> Compare Now
+        </button>
+        <button class="btn btn-outline-danger btn-sm rounded-circle p-2" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;" title="Clear comparison" onclick="window.clearCompareRooms()">
+          <i class="fa-solid fa-trash-can" style="font-size: 0.75rem;"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Data Repository -->
+    <script src="assets/js/rooms-data.js"></script>
+
+    <!-- Application Logic -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
